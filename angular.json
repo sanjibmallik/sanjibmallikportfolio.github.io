@@ -31,6 +31,10 @@
               "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": [
+              "src/assets/js/jquery.min.js",
+              "src/assets/js/jquery.nav.js",
+              "src/assets/js/jquery.fancybox.min.js",
+              "src/assets/js/jquery.mixitup.min.js",
               "src/assets/js/custom-script.js"
             ],
             "es5BrowserSupport": true
