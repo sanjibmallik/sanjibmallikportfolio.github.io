@@ -35,6 +35,11 @@
               "src/assets/js/jquery.nav.js",
               "src/assets/js/jquery.fancybox.min.js",
               "src/assets/js/jquery.mixitup.min.js",
+              "src/assets/js/wow.min.js",
+              "src/assets/js/owl.carousel.js",
+              "src/assets/js/validator.min.js",
+             
+              "src/assets/js/circle-progress.js",
               "src/assets/js/custom-script.js"
             ],
             "es5BrowserSupport": true
