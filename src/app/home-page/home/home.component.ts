@@ -1,3 +1,4 @@
+import { DataService } from './../../services/data.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -9,18 +10,17 @@ export class HomeComponent implements OnInit {
 
   user:any = {}
 
-  constructor() { }
+  constructor(private _service: DataService) { }
 
   ngOnInit() {
     this.loadUser();
   }
 
   loadUser(){
-    this.user.userName = "Sanjib Mallik";
-    this.user.role = "Software Engineer";
-    this.user.phone = "+91 7250550530"
-    this.user.emailId = "Sanjibmallik.prof@gmail.com";
-    this.user.address = "#1257, Idhga road, Varthur, Bangalore-87, Karnataka, India"
+    this._service.getUserDetails()
+    .subscribe((data)=>{
+     this.user = data;
+    })
   }
 
 }

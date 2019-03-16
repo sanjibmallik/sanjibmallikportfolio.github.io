@@ -38,7 +38,7 @@
               "src/assets/js/wow.min.js",
               "src/assets/js/owl.carousel.js",
               "src/assets/js/validator.min.js",
-             
+              "src/assets/js/popper.min.js",
               "src/assets/js/styleswitcher.js",
               "src/assets/js/isotope.pkgd.js",
               "src/assets/js/packery-mode.pkgd.js",

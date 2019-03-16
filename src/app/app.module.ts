@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {  HttpClientModule } from '@angular/common/http'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +12,7 @@ import { ContactComponent } from './home-page/contact/contact.component';
 import { ProjectsComponent } from './home-page/projects/projects.component';
 import { ExperiencesComponent } from './home-page/experiences/experiences.component';
 import { HomeComponent } from './home-page/home/home.component';
+import { EducationComponent } from './home-page/education/education.component';
 
 
 @NgModule({
@@ -23,10 +25,12 @@ import { HomeComponent } from './home-page/home/home.component';
     ContactComponent,
     ProjectsComponent,
     ExperiencesComponent,
-    HomeComponent
+    HomeComponent,
+    EducationComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule
     //AppRoutingModule
   ],
   providers: [],

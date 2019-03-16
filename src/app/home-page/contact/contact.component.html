@@ -16,8 +16,7 @@
                                   <div class="each-info media-body">
                                       <h4>Address</h4>
                                       <address>
-                                         Bangalore, Karnataka-87
-                                         India
+                                         {{user.address}}
                                       </address>
                                   </div>
                               </div>
@@ -29,8 +28,8 @@
                                   </div>
                                   <div class="each-info media-body">
                                       <h4>Email</h4>
-                                      <a href="mailto:Sanjibmallik.prof@gmail.com">Sanjibmallik.prof@email.com</a><br>
-                                      <a href="mailto:Sanjib.mallik24@gmail.com">Sanjib.mallik24@gmail.com</a>
+                                      <a href="mailto:{{user.emailId}}">{{user.emailId}}</a><br>
+                                      <a href="mailto:{{user.emailId2}}">{{user.emailId2}}</a>
                                   </div>
                               </div>
                           </div>
@@ -41,7 +40,7 @@
                                   </div>
                                   <div class="each-info media-body">
                                       <h4>Phone</h4>
-                                      <a href="callto:+91 7259550530">+91 7259550530</a><br>
+                                      <a href="callto:+91 7259550530">+{{user.phone}}</a><br>
                                      
                                   </div>
                               </div>
@@ -83,10 +82,9 @@
                               </div>
                               <div class="col-sm-6">
                                   <ul class="social-icon">
-                                      <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                                      <li><a href=""><i class="fa fa-linkedin"></i></a></li>
-                                      <li><a href=""><i class="fa fa-github"></i></a></li>
-                                     
+                                    <li><a href="{{user.facebookLink}}" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="{{user.linkedInLink}}" target="_blank"><i class="fa fa-linkedin" ></i></a></li>
+                                    <li><a href="{{user.githubLink}}" target="_blank"><i class="fa fa-github"></i></a></li>                           
                                   </ul>
                               </div>
                           </div>
