@@ -23,48 +23,6 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 
 /***/ }),
 
-/***/ "./src/app/app-routing.module.ts":
-/*!***************************************!*\
-  !*** ./src/app/app-routing.module.ts ***!
-  \***************************************/
-/*! exports provided: AppRoutingModule */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppRoutingModule", function() { return AppRoutingModule; });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _home_page_home_page_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home-page/home-page.component */ "./src/app/home-page/home-page.component.ts");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
-
-
-
-
-var routes = [
-    {
-        path: '', redirectTo: 'home', pathMatch: 'full'
-    },
-    {
-        path: 'home', component: _home_page_home_page_component__WEBPACK_IMPORTED_MODULE_1__["HomePageComponent"]
-    }
-];
-var AppRoutingModule = /** @class */ (function () {
-    function AppRoutingModule() {
-    }
-    AppRoutingModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
-            imports: [_angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"].forRoot(routes)],
-            exports: [_angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"]]
-        })
-    ], AppRoutingModule);
-    return AppRoutingModule;
-}());
-
-
-
-/***/ }),
-
 /***/ "./src/app/app.component.html":
 /*!************************************!*\
   !*** ./src/app/app.component.html ***!
@@ -72,7 +30,7 @@ var AppRoutingModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n<router-outlet></router-outlet>\n"
+module.exports = "\n<app-header></app-header>\n<app-home></app-home>\n<app-about></app-about>\n<app-skills></app-skills>\n<app-experiences></app-experiences>\n<app-projects></app-projects>\n<app-contact></app-contact>\n\n"
 
 /***/ }),
 
@@ -132,17 +90,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _home_page_home_page_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./home-page/home-page.component */ "./src/app/home-page/home-page.component.ts");
-/* harmony import */ var _home_page_header_header_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./home-page/header/header.component */ "./src/app/home-page/header/header.component.ts");
-/* harmony import */ var _home_page_about_about_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./home-page/about/about.component */ "./src/app/home-page/about/about.component.ts");
-/* harmony import */ var _home_page_skills_skills_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./home-page/skills/skills.component */ "./src/app/home-page/skills/skills.component.ts");
-/* harmony import */ var _home_page_contact_contact_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./home-page/contact/contact.component */ "./src/app/home-page/contact/contact.component.ts");
-/* harmony import */ var _home_page_projects_projects_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./home-page/projects/projects.component */ "./src/app/home-page/projects/projects.component.ts");
-/* harmony import */ var _home_page_experiences_experiences_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./home-page/experiences/experiences.component */ "./src/app/home-page/experiences/experiences.component.ts");
-/* harmony import */ var _home_page_home_home_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./home-page/home/home.component */ "./src/app/home-page/home/home.component.ts");
-
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _home_page_home_page_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./home-page/home-page.component */ "./src/app/home-page/home-page.component.ts");
+/* harmony import */ var _home_page_header_header_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./home-page/header/header.component */ "./src/app/home-page/header/header.component.ts");
+/* harmony import */ var _home_page_about_about_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./home-page/about/about.component */ "./src/app/home-page/about/about.component.ts");
+/* harmony import */ var _home_page_skills_skills_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./home-page/skills/skills.component */ "./src/app/home-page/skills/skills.component.ts");
+/* harmony import */ var _home_page_contact_contact_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./home-page/contact/contact.component */ "./src/app/home-page/contact/contact.component.ts");
+/* harmony import */ var _home_page_projects_projects_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./home-page/projects/projects.component */ "./src/app/home-page/projects/projects.component.ts");
+/* harmony import */ var _home_page_experiences_experiences_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./home-page/experiences/experiences.component */ "./src/app/home-page/experiences/experiences.component.ts");
+/* harmony import */ var _home_page_home_home_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./home-page/home/home.component */ "./src/app/home-page/home/home.component.ts");
 
 
 
@@ -161,22 +117,21 @@ var AppModule = /** @class */ (function () {
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
             declarations: [
-                _app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"],
-                _home_page_home_page_component__WEBPACK_IMPORTED_MODULE_5__["HomePageComponent"],
-                _home_page_header_header_component__WEBPACK_IMPORTED_MODULE_6__["HeaderComponent"],
-                _home_page_about_about_component__WEBPACK_IMPORTED_MODULE_7__["AboutComponent"],
-                _home_page_skills_skills_component__WEBPACK_IMPORTED_MODULE_8__["SkillsComponent"],
-                _home_page_contact_contact_component__WEBPACK_IMPORTED_MODULE_9__["ContactComponent"],
-                _home_page_projects_projects_component__WEBPACK_IMPORTED_MODULE_10__["ProjectsComponent"],
-                _home_page_experiences_experiences_component__WEBPACK_IMPORTED_MODULE_11__["ExperiencesComponent"],
-                _home_page_home_home_component__WEBPACK_IMPORTED_MODULE_12__["HomeComponent"]
+                _app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"],
+                _home_page_home_page_component__WEBPACK_IMPORTED_MODULE_4__["HomePageComponent"],
+                _home_page_header_header_component__WEBPACK_IMPORTED_MODULE_5__["HeaderComponent"],
+                _home_page_about_about_component__WEBPACK_IMPORTED_MODULE_6__["AboutComponent"],
+                _home_page_skills_skills_component__WEBPACK_IMPORTED_MODULE_7__["SkillsComponent"],
+                _home_page_contact_contact_component__WEBPACK_IMPORTED_MODULE_8__["ContactComponent"],
+                _home_page_projects_projects_component__WEBPACK_IMPORTED_MODULE_9__["ProjectsComponent"],
+                _home_page_experiences_experiences_component__WEBPACK_IMPORTED_MODULE_10__["ExperiencesComponent"],
+                _home_page_home_home_component__WEBPACK_IMPORTED_MODULE_11__["HomeComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
-                _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"]
             ],
             providers: [],
-            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]]
         })
     ], AppModule);
     return AppModule;
@@ -361,7 +316,7 @@ var ExperiencesComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<header class=\"black-bg mh-header mh-fixed-nav nav-scroll mh-xs-mobile-nav\" id=\"mh-header\">\n    <div class=\"overlay\"></div>\n    <div class=\"container\">\n        <div class=\"row\">\n            <nav class=\"navbar navbar-expand-lg mh-nav nav-btn\">\n                <button class=\"navbar-toggler collapsed\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n                    <span class=\"navbar-toggler-icon icon\"></span>\n                </button>\n            \n                <div class=\"navbar-collapse collapse\" id=\"navbarSupportedContent\" style=\"\">\n                    <ul class=\"navbar-nav mr-auto ml-auto\">\n                        <li class=\"nav-item active\">\n                            <a class=\"nav-link\" href=\"#mh-home\">Home</a>\n                        </li>\n                        <li class=\"nav-item\">\n                            <a class=\"nav-link\" href=\"#mh-about\">About</a>\n                        </li>\n                        <li class=\"nav-item\">\n                           <a class=\"nav-link\" href=\"#mh-skills\">Skills</a>\n                        </li>                                \n                        <li class=\"nav-item\">\n                           <a class=\"nav-link\" href=\"#mh-experience\">Experiences</a>\n                        </li>                                \n                        <li class=\"nav-item\">\n                            <a class=\"nav-link\" href=\"#mh-portfolio\">Portfolio</a>\n                        </li>                               \n                        <li class=\"nav-item\">\n                            <a class=\"nav-link\" href=\"#mh-pricing\">Pricing</a>\n                        </li>\n                        <li class=\"nav-item\">\n                            <a class=\"nav-link\" href=\"#mh-blog\">Blog</a>\n                        </li>\n                        <li class=\"nav-item\">\n                           <a class=\"nav-link\" href=\"#mh-contact\">Contact</a>\n                        </li>\n                    </ul>\n                </div>\n            </nav>\n        </div>\n    </div>\n</header>"
+module.exports = "<header class=\"black-bg mh-header bg-black fixed-top mh-fixed-nav nav-scroll mh-xs-mobile-nav\" id=\"mh-header\">\n    <div class=\"overlay\"></div>\n    <div class=\"container\">\n        <div class=\"row\">\n            <nav class=\"navbar navbar-expand-lg mh-nav nav-btn\">\n                <button class=\"navbar-toggler collapsed\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n                    <span class=\"navbar-toggler-icon icon\"></span>\n                </button>\n            \n                <div class=\"navbar-collapse collapse\" id=\"navbarSupportedContent\" style=\"\">\n                    <ul class=\"navbar-nav mr-auto ml-auto\">\n                        <li class=\"nav-item active\">\n                            <a class=\"nav-link\" href=\"#mh-home\">Home</a>\n                        </li>\n                        <li class=\"nav-item\">\n                            <a class=\"nav-link\" href=\"#mh-about\">About</a>\n                        </li>\n                        <li class=\"nav-item\">\n                           <a class=\"nav-link\" href=\"#mh-skills\">Skills</a>\n                        </li>                                \n                        <li class=\"nav-item\">\n                           <a class=\"nav-link\" href=\"#mh-experience\">Experiences</a>\n                        </li>                                \n                        \n                        <li class=\"nav-item\">\n                           <a class=\"nav-link\" href=\"#mh-contact\">Contact</a>\n                        </li>\n                    </ul>\n                </div>\n            </nav>\n        </div>\n    </div>\n</header>"
 
 /***/ }),
 
@@ -417,7 +372,7 @@ var HeaderComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-header></app-header>\n<app-home></app-home>\n<app-about></app-about>\n<app-skills></app-skills>\n<app-experiences></app-experiences>\n<app-projects></app-projects>\n<app-contact></app-contact>\n"
+module.exports = "\n<!-- <app-header></app-header>\n<app-home></app-home>\n<app-about></app-about>\n<app-skills></app-skills>\n<app-experiences></app-experiences>\n<app-projects></app-projects>\n<app-contact></app-contact> -->\n"
 
 /***/ }),
 

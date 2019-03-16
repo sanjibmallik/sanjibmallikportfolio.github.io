@@ -11,7 +11,7 @@ import { ContactComponent } from './home-page/contact/contact.component';
 import { ProjectsComponent } from './home-page/projects/projects.component';
 import { ExperiencesComponent } from './home-page/experiences/experiences.component';
 import { HomeComponent } from './home-page/home/home.component';
-import { BaseComponent } from './home-page/base/base.component';
+
 
 @NgModule({
   declarations: [
@@ -23,12 +23,11 @@ import { BaseComponent } from './home-page/base/base.component';
     ContactComponent,
     ProjectsComponent,
     ExperiencesComponent,
-    HomeComponent,
-    BaseComponent
+    HomeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    //AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

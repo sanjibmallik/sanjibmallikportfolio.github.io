@@ -1,4 +1,3 @@
-import { BaseComponent } from './home-page/base/base.component';
 import { HomeComponent } from './home-page/home/home.component';
 import { ContactComponent } from './home-page/contact/contact.component';
 import { SkillsComponent } from './home-page/skills/skills.component';
@@ -10,44 +9,12 @@ import { ExperiencesComponent } from './home-page/experiences/experiences.compon
 
 const routes: Routes = [
   {
-    path: '', redirectTo: 'main', pathMatch: 'full'
+    path: '', redirectTo: '/', pathMatch: 'full'
   },
+  
   {
-      path: 'start', component: BaseComponent
-  },
-  {
-    path:'main', component:HomePageComponent
+    path:'/', component:HomePageComponent
   }
-
-  // {
-  //   path: 'start', component: BaseComponent
-  // },
-  // {
-  //   path: 'main', component: HomePageComponent, children: [
-  //     {
-  //       path: 'home', component: HomeComponent
-  //     },
-
-  //     {
-  //       path: 'about', component: AboutComponent
-  //     },
-
-  //     {
-  //       path: 'skills', component: SkillsComponent
-  //     },
-
-  //     {
-  //       path: 'experiences', component: ExperiencesComponent
-  //     },
-
-  //     {
-  //       path: 'contact', component: ContactComponent
-  //     }
-  //   ]
-  // },
-
-
-
 ];
 
 @NgModule({
