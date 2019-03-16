@@ -39,6 +39,10 @@
               "src/assets/js/owl.carousel.js",
               "src/assets/js/validator.min.js",
              
+              "src/assets/js/styleswitcher.js",
+              "src/assets/js/isotope.pkgd.js",
+              "src/assets/js/packery-mode.pkgd.js",
+
               "src/assets/js/circle-progress.js",
               "src/assets/js/custom-script.js"
             ],
